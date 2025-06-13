@@ -8,7 +8,7 @@
       /* Styling Only Related To THIS Page */
       .parent-flex {
         display: flex;
-        background-color: purple;
+        background-color: black;
         justify-content: space-around;
         padding: 10px;
         margin-bottom: 20px;
@@ -18,6 +18,12 @@
         max-width: 30%;
         border-radius: 10px;
       }
+      body {
+            background-color: black;
+            color: white; /* Makes the text white so it’s visible against the black background */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Ensures the background covers the entire page */
     </style>
   </head>
   <body>
@@ -25,42 +31,81 @@
     <ul class="nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
-      <li><a class="active" href="art.html">Art</a></li>
+      <li><a class="active" href="art.html">My Life</a></li>
       <li><a href="resume.html">Resume</a></li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
+            src=
             style="width: 25px; margin: -5px"
         /></a>
       </li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
+            src=""
             style="width: 25px; margin: -5px"
         /></a>
       </li>
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>My Art</h1>
+    <h1>My Life Outsude the Studio</h1>
 
-    <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
+    <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    /* Styling for the flex layout */
+    .parent-flex {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .child-flex {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+    }
+
+    img {
+      width: 100%; /* Make images responsive */
+      max-width: 500px; /* Limit image width */
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- First Image -->
+  <img
+    
+    
+  />
+
+  <!-- Flexbox layout for 3 images -->
+  <div class="parent-flex">
+    <!-- First Image -->
+    <div class="child-flex">
+      <img src="https://cdn.glitch.global/b99909bb-f9b3-41f6-aa2b-b2b2f72543c2/thumbnails%2FIMG_1662.jpg?1749820428826" alt="Image 1" />
     </div>
 
-    <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
+    <!-- Second Image -->
+    <div class="child-flex">
+      <img src="https://cdn.glitch.global/b99909bb-f9b3-41f6-aa2b-b2b2f72543c2/thumbnails%2FIMG_0407.jpg?1749820427897" alt="Image 2" />
     </div>
-  </body>
+
+    <!-- Third Image -->
+    <div class="child-flex">
+      <img src="https://cdn.glitch.global/b99909bb-f9b3-41f6-aa2b-b2b2f72543c2/09768F72-53FC-4AE9-A525-FDD2F39F07F6.JPG?v=1749820421387" alt="Image 3" />
+    </div>
+  </div>
+
+</body>
 </html>
+
