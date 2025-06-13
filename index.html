@@ -21,14 +21,12 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
-      /*~~~~~ Taken From:
-      https://www.w3schools.com/howto/howto_css_parallax.asp*/
       .parallax {
         /* The image used */
-        background-image: url("https://cdn.glitch.global/66249578-345e-4e9c-8fac-cabe98f682e4/image0.jpeg?v=1747657278943");
+        background-image: url("https://cdn.glitch.global/b99909bb-f9b3-41f6-aa2b-b2b2f72543c2/thumbnails%2FIMG_9844.jpeg?1749681724835"); /* Add your image URL here */
 
         /* Set a specific height */
-        min-height: 500px;
+        min-height: 900px;
 
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
@@ -36,33 +34,52 @@ Select ONE Additional Feature to Add
         background-repeat: no-repeat;
         background-size: cover;
       }
-      .textblock {
-        min-height: 500px;
-        background-color: black;
-        color: white;
-      }
-      .parent-flex {
+
+      /* Flexbox Layout for Image and Text */
+      .flex-container {
         display: flex;
+        align-items: center; /* Vertically center content */
+        justify-content: space-between;
+        margin: 20px;
       }
-      .child-flex {
-        background-color: green;
-        margin: 30px;
-        padding: 10px;
+
+      .image-container {
+        flex: 1;
+        margin-right: 5px; /* Space between image and text */
+      }
+
+      .image-container img {
+        width: 100%;
+        height: auto;
+      }
+
+      .text-container {
+        flex: 1;
+        background-color: #f4f4f4;
+        padding: 20px;
+        color: #333;
         text-align: justify;
-        width: 40%;
       }
-      .para-1{
-        display: flex;
-        align-items: center;
+      body {
+            background-color: black;
+            color: white; /* Makes the text white so it’s visible against the black background */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Ensures the background covers the entire page */
+
+      /* Additional styling */
+      h1 {
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul class="nav">
-      <li><a class="active" href="index.html">Home</a></li>
+      <li><a class="active" href="index.html">Home
+        </a></li>
       <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
+      <li><a href="art.html">My Life outside of the studio</a></li>
       <li><a href="resume.html">Resume</a></li>
       <li style="float: right">
         <a target="_blank" href=""
@@ -81,30 +98,34 @@ Select ONE Additional Feature to Add
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Ms. Hall | Web Dev 2024-2025</h1>
+    <h1>Ava-Nicole Fincher</h1>
     <div class="parallax"></div>
 
-    <div class="textblock parent-flex">
-      <div class="child-flex para-1">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
+    <div class="flex-container">
+      <div class="image-container">
+        <img
+          src="https://cdn.glitch.global/b99909bb-f9b3-41f6-aa2b-b2b2f72543c2/thumbnails%2FA1D594B4-2A30-4B27-82A3-E1BF148A56D1.JPG?1749682075579"
+          alt="Description of Image"
+        />
       </div>
-      <div class="child-flex">
+      <div class="text-container">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+          Ava-Nicole Fincher is an 18-year-old professional dancer with a
+          passion for movement that has defined her life from a young age. Dance
+          has always been more than just a hobby for Ava-Nicole; it is her true
+          calling and a central part of her identity. From ballet to
+          contemporary, hip-hop to jazz, she has dedicated countless hours to
+          mastering a wide range of dance styles. Her commitment to perfecting
+          her craft has earned her recognition as a skilled and versatile dancer
+          in her local community. As Ava-Nicole embarks on the next chapter of
+          her journey, she is preparing to take a significant step in her
+          career: attending college to pursue a professional degree in dance.
+          With plans to further her education and continue developing as a
+          dancer, she is excited to immerse herself in a collegiate environment
+          where she can refine her technique, learn from experts, and explore
+          new creative avenues. Her ultimate goal is to make a lasting impact in
+          the dance world, whether through performance, choreography, or
+          teaching.
         </p>
       </div>
     </div>

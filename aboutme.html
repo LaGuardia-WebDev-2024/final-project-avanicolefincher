@@ -6,16 +6,9 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
-      .parent-flex {
-        display: flex;
-        background-color: purple;
-        align-items: center;
-        justify-content: space-around;
-        margin-bottom: 50px;
-      }
 
       .parent-flex img {
-        width: 150px;
+        width: 170px;
         padding: 20px;
       }
       .child-flex p {
@@ -23,6 +16,14 @@
         padding: 20px;
         margin: 20px;
       }
+      
+      body {
+            background-color: black;
+            color: white; /* Makes the text white so it’s visible against the black background */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Ensures the background covers the entire page */
+        }
     </style>
   </head>
   <body>
@@ -50,41 +51,69 @@
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h1>About Me</h1>
-    <div class="parent-flex">
-      <div class="child-flex">
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-        />
-      </div>
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    /* Styling for the flex layout */
+    .parent-flex {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .child-flex {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+    }
+
+    img {
+      width: 100%; /* Make images responsive */
+      max-width: 500px; /* Limit image width */
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- First Image -->
+  
+
+  <!-- Flexbox layout for 3 images -->
+  <div class="parent-flex">
+    <!-- First Image -->
+    <div class="child-flex">
+      <img src="https://cdn.glitch.global/b99909bb-f9b3-41f6-aa2b-b2b2f72543c2/IMG_0200.JPEG?v=1749822097338" alt="Image 1" />
+      <h5>
+        I started dancing at 3 years old at Rod Rodgers danc company in just tap and Ballet 
+      </h1>
     </div>
-    <div class="parent-flex">
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-      <div class="child-flex">
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-        />
-      </div>
+
+    <!-- Second Image -->
+    <div class="child-flex">
+      <img src="https://cdn.glitch.global/b99909bb-f9b3-41f6-aa2b-b2b2f72543c2/IMG_3096.JPG?v=1749823095377" alt="Image 2" />
+      <h5>
+        When i Turned 9 yeras old in started traiming more seirously in more diverse style sat Dwana Smallwood performing arts center 
+        
+      </h5>
     </div>
-  </body>
+
+    <!-- Third Image -->
+    <div class="child-flex">
+      <img src="https://cdn.glitch.global/b99909bb-f9b3-41f6-aa2b-b2b2f72543c2/IMG_0872.jpg?v=1749823097817" alt="Image 3" />
+      <h5>
+        I began Highschool at Fiorello Laguardia Highschool and over the span of my 4 years years i have trained at Ballet Hispánico schiooo 
+      </h5>
+    </div>
+  </div>
+
+</body>
 </html>
+
